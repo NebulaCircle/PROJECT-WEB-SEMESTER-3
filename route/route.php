@@ -1,7 +1,7 @@
 <?php
 
 use services\Route;
-use controller\TestController;
+use controllers\TestController;
 
 Route::addRoute("GET", "/test/:id", [TestController::class, "index"]);
 
