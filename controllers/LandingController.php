@@ -2,9 +2,9 @@
 
 namespace controllers;
 
-class TestController
+class LandingController
 {
-    public function index($id)
+    public function index()
     {
         include __DIR__ . "/../view/index.php";
     }

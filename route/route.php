@@ -1,9 +1,9 @@
 <?php
 
 use services\Route;
-use controllers\TestController;
+use controllers\LandingController;
 
-Route::addRoute("GET", "/", [TestController::class, "index"]);
+Route::addRoute("GET", "/", [LandingController::class, "index"]);
 
 
 Route::run();
