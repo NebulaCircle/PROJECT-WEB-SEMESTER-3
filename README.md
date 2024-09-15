@@ -88,7 +88,7 @@ $ php -S localhost:8000 -t public
 
 This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
 
-Made with :heart: by <a href="https://github.com/NebulaCircle" target="_blank">
+Made with :heart: by
 <br>
 Akbar Maulidi Riskiawan (E41232095)
 <br>
