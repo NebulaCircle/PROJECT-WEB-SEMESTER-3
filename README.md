@@ -10,19 +10,19 @@
 <h1 align="center">SIKAMDIS</h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/NebulaCircle/project-web-semester-3?color=56BEB8">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/Tech-Evolution-Nexus/WEB_REKAM_MEDIS?color=56BEB8">
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/NebulaCircle/project-web-semester-3?color=56BEB8">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/Tech-Evolution-Nexus/WEB_REKAM_MEDIS?color=56BEB8">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/NebulaCircle/project-web-semester-3?color=56BEB8">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/Tech-Evolution-Nexus/WEB_REKAM_MEDIS?color=56BEB8">
 
-  <img alt="License" src="https://img.shields.io/github/license/NebulaCircle/project-web-semester-3?color=56BEB8">
+  <img alt="License" src="https://img.shields.io/github/license/Tech-Evolution-Nexus/WEB_REKAM_MEDIS?color=56BEB8">
 
-  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/NebulaCircle/project-web-semester-3?color=56BEB8" /> -->
+  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/Tech-Evolution-Nexus/WEB_REKAM_MEDIS?color=56BEB8" /> -->
 
-  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/NebulaCircle/project-web-semester-3?color=56BEB8" /> -->
+  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/Tech-Evolution-Nexus/WEB_REKAM_MEDIS?color=56BEB8" /> -->
 
-  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/NebulaCircle/project-web-semester-3?color=56BEB8" /> -->
+  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/Tech-Evolution-Nexus/WEB_REKAM_MEDIS?color=56BEB8" /> -->
 </p>
 
 <!-- Status -->
@@ -40,7 +40,7 @@
   <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
   <a href="#memo-license">License</a> &#xa0; | &#xa0;
-  <a href="https://github.com/NebulaCircle" target="_blank">Author</a>
+  <a href="https://github.com/Tech-Evolution-Nexus" target="_blank">Author</a>
 </p>
 
 <br>
@@ -84,7 +84,7 @@ Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) in
   Kunjungi [PHP](https://www.php.net/downloads) untuk mengunduh versi PHP yang sesuai dengan sistem operasi Anda.
 
 # Clone this project
-$ git clone https://github.com/NebulaCircle/project-web-semester-3
+$ git clone https://github.com/Tech-Evolution-Nexus/WEB_REKAM_MEDIS
 
 # Access
 $ cd project-web-semester-3
