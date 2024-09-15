@@ -96,9 +96,9 @@ Ahmad Ja'far Shodiq (E41232055)
 <br>
 Ilham Nur Isnaini Baskara Jaya (E41232121)
 <br>
-Muhammad Nor Kholit (E41231973)
+<a href="https://github.com/NebulaCircle" target="_blank">Muhammad Nor Kholit (E41231973)</a>
 <br>
-Sagita Putri Agustin (E41232221)</a>
+Sagita Putri Agustin (E41232221)
 
 &#xa0;
 
