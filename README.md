@@ -70,7 +70,7 @@ Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) an
 
 
 # instal php
-  Kunjungi [situs resmi PHP](https://www.php.net/downloads) untuk mengunduh versi PHP yang sesuai dengan sistem operasi Anda.
+  Kunjungi [PHP](https://www.php.net/downloads) untuk mengunduh versi PHP yang sesuai dengan sistem operasi Anda.
 
 # Clone this project
 $ git clone https://github.com/NebulaCircle/project-web-semester-3
@@ -81,7 +81,7 @@ $ cd project-web-semester-3
 # Run the project
 $ php -S localhost:8000 -t public
 
-# The server will initialize in the <http://localhost:3000>
+# The server will initialize in the <http://localhost:8000>
 ```
 
 ## :memo: License
