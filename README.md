@@ -51,9 +51,10 @@ SIKAMDIS adalah aplikasi untuk mengelola rekam medis pasien secara digital, memu
 
 ## :sparkles: Features
 
-:heavy_check_mark: Catat Rekam Medis Pasien;\
-:heavy_check_mark: Cek History Kunjungan Pasien;\
-:heavy_check_mark: Laporan Pendapatan;
+:heavy_check_mark: Pengelolaan Rekam Medis Elektronik (RME)\
+:heavy_check_mark: Manajemen Kunjungan\
+:heavy_check_mark: Pencatatan Data Pasien\
+:heavy_check_mark: Pengelolaan Rekam Medis
 
 ## :rocket: Technologies
 
