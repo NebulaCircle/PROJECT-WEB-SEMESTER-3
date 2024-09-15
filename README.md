@@ -7,6 +7,7 @@
 </div>
 
 <h1 align="center">PROJECT WEB SEMESTER 3</h1>
+<h1 align="center">SIKAMDIS</h1>
 
 <p align="center">
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/NebulaCircle/project-web-semester-3?color=56BEB8">
@@ -46,7 +47,7 @@
 
 ## :dart: About
 
-Describe your project
+SIKAMDIS adalah aplikasi untuk mengelola rekam medis pasien secara digital, memudahkan pencatatan, penyimpanan, dan akses informasi kesehatan guna meningkatkan efisiensi layanan medis.
 
 ## :sparkles: Features
 
