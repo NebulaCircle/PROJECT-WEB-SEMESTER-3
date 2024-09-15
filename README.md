@@ -62,7 +62,7 @@ The following tools were used in this project:
 
 ## :white_check_mark: Requirements
 
-Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
+Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) installed.
 
 ## :checkered_flag: Starting
 
@@ -89,10 +89,15 @@ $ php -S localhost:8000 -t public
 This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
 
 Made with :heart: by <a href="https://github.com/NebulaCircle" target="_blank">
+<br>
 Akbar Maulidi Riskiawan (E41232095)
+<br>
 Ahmad Ja'far Shodiq (E41232055)
+<br>
 Ilham Nur Isnaini Baskara Jaya (E41232121)
+<br>
 Muhammad Nor Kholit (E41231973)
+<br>
 Sagita Putri Agustin (E41232221)</a>
 
 &#xa0;
