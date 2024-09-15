@@ -1,0 +1,78 @@
+:root {
+  --clr-primary-light: #e9f2ff;
+  --clr-second: #f1a208;
+  --clr-primary: #1c2f5a;
+  --clr-primary2: #315098;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem; /* default untuk body */
+  background-color: var(--clr-primary-light);
+}
+section {
+  padding-block: 2rem;
+  min-height: 100vh;
+}
+.hero .big-brand {
+  position: absolute;
+  top: -5rem;
+  font-size: 6.5rem; /* default untuk layar besar */
+  opacity: 15%;
+}
+
+.hero .line {
+  width: 100px;
+  height: 1px;
+  display: inline-block;
+}
+.check-history {
+  padding-block: 4rem;
+  min-height: auto;
+}
+.check-history input::placeholder {
+  color: rgb(219, 219, 219);
+}
+.layer-img {
+  background-color: var(--clr-primary);
+  width: 100%;
+  height: 20%;
+}
+.bg-primary {
+  background-color: var(--clr-primary) !important;
+}
+.text-primary {
+  color: var(--clr-primary2) !important;
+}
+.why-choose-app .card:hover {
+  transition: all 0.5s;
+  background-color: var(--clr-primary);
+}
+.why-choose-app .card:hover p {
+  color: white !important;
+}
+
+/* Responsif untuk layar sedang (tablet) */
+@media (max-width: 768px) {
+  section {
+    padding-block: 1.5rem;
+  }
+  .hero .big-brand {
+    top: -4rem;
+    font-size: 4.5rem;
+  }
+  .hero .line {
+    width: 80px;
+  }
+
+  .check-history {
+    padding-block: 2.5rem;
+  }
+}
+
+/* Responsif untuk layar kecil (ponsel) */
+@media (max-width: 480px) {
+  .hero .big-brand {
+    font-size: 3rem;
+  }
+}
