@@ -56,6 +56,15 @@ SIKAMDIS adalah aplikasi untuk mengelola rekam medis pasien secara digital, memu
 :heavy_check_mark: Pencatatan Data Pasien\
 :heavy_check_mark: Pengelolaan Rekam Medis
 
+## Struktur Folder
+
+- **/controllers**: Menyimpan file yang mengatur logika aplikasi dan menangani permintaan dari pengguna.
+- **/routes**: Mengelola pengaturan rute dan navigasi halaman aplikasi.
+- **/models**: Mengelola interaksi dengan tabel database dan operasi data.
+- **/views**: Menyimpan file HTML atau tampilan yang ditampilkan di browser.
+- **/public**: Menyimpan aset seperti gambar, file CSS, dan JavaScript yang dapat diakses publik.
+- **/services**: Menyimpan file yang mendukung berbagai fungsi sistem agar aplikasi berjalan dengan baik.
+
 ## :rocket: Technologies
 
 The following tools were used in this project:
