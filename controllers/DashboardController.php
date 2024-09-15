@@ -2,10 +2,10 @@
 
 namespace controllers;
 
-class LandingController
+class DashboardController
 {
     public function index()
     {
-        return view("index");
+        return view("admin/dashboard");
     }
 }

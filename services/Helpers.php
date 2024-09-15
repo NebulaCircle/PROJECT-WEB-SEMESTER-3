@@ -23,3 +23,18 @@ if (!function_exists("baseUrl")) {
         return "$protocol://$host$scriptName/";
     }
 }
+
+
+if (!function_exists("view")) {
+    function view($path, $data = [])
+    {
+        extract($data);
+        include __DIR__ . "/../view/$path.php";
+    }
+}
+if (!function_exists("includeFile")) {
+    function includeFile($path)
+    {
+        include __DIR__ . "/../view/$path.php";
+    }
+}

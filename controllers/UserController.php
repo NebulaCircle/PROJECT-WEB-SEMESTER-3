@@ -2,7 +2,7 @@
 
 namespace controllers;
 
-class LandingController
+class UserController
 {
     public function index()
     {
