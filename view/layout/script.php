@@ -4,11 +4,25 @@
 
 <!-- code show hide navbar -->
 <script>
-    $(".nav-toggle").on("click", function() {
-        if ($(".sidebar").hasClass("active")) {
-            $(".sidebar").removeClass("active")
-        } else {
-            $(".sidebar").addClass("active")
-        }
-    });
+    $(document).ready(function() {
+        $(".nav-toggle").on("click", function() {
+            if ($(".sidebar").hasClass("active")) {
+                $(".sidebar").removeClass("active")
+            } else {
+                $(".sidebar").addClass("active")
+            }
+        });
+
+        const sidebarItem = $(".sidebar-item");
+        const pathname = window.location.pathname;
+
+        sidebarItem.each(function() {
+            const href = $(this).attr("href");
+
+            // Cek apakah href sesuai dengan pathname
+            if (pathname.includes(href)) {
+                $(this).addClass("bg-info");
+            }
+        });
+    })
 </script>

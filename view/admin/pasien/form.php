@@ -14,7 +14,7 @@
     <main class="flex-grow-1 p-3">
         <?php includeFile("layout/navbar") ?>
         <h3 class="mb-0 "><?= $title ?></h3>
-        <p class="text-secondary "><?= $description ?> </p>
+        <p class="text-body-secondary "><?= $description ?> </p>
         <div class="card ">
             <!-- <div class="card-header bg-transparent ">
             </div> -->
@@ -22,15 +22,15 @@
                 <form action="<?= $action_form ?>" method="post">
                     <div class="row mb-4 g-3">
                         <div class="form-group col-md-6 col-12">
-                            <label for="" class="text-secondary ">Nama</label>
+                            <label for="" class="text-body-secondary ">Nama</label>
                             <input class="form-control" value="<?= $data->name ?>" type="text" placeholder="Nama pasien" name="name" id="">
                         </div>
                         <div class="form-group col-md-6 col-12">
-                            <label for="" class="text-secondary ">Tanggal Lahir</label>
+                            <label for="" class="text-body-secondary ">Tanggal Lahir</label>
                             <input class="form-control" value="<?= $data->birth_date ?>" type="date" name="birth-date" id="">
                         </div>
                         <div class="form-group col-md-6 col-12">
-                            <label for="" class="text-secondary ">Nomor Telepon</label>
+                            <label for="" class="text-body-secondary ">Nomor Telepon</label>
                             <input class="form-control" value="<?= $data->phone ?>" type="number" placeholder="Nomor Telepon" name="phone" id="">
                         </div>
                     </div>

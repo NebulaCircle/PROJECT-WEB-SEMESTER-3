@@ -16,7 +16,7 @@
         <div class="d-flex align-items-center">
             <div class="">
                 <h2 class="mb-0 "><?= $title ?></h2>
-                <p class="text-secondary "><?= $description ?> </p>
+                <p class="text-body-secondary "><?= $description ?> </p>
             </div>
             <div class="ms-auto">
                 <a href="/admin/pasien/create" class="btn btn-primary">Tambah Pasien</a>
@@ -52,7 +52,23 @@
                 </table>
             </div>
         </div>
+        <button class="btn btn-primary">
+            button
+        </button><button class="btn btn-secondary">
+            button
+        </button><button class="btn btn-warning">
+            button
+        </button><button class="btn btn-danger">
+            button
+        </button><button class="btn btn-info">
+            button
+        </button>
+        </button><button class="btn btn-success">
+            button
+        </button>
     </main>
+
+
     <!--end yang perlu diubah -->
 
     <?php includeFile("layout/script") ?>
