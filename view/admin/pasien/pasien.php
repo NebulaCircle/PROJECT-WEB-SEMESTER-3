@@ -52,20 +52,7 @@
                 </table>
             </div>
         </div>
-        <button class="btn btn-primary">
-            button
-        </button><button class="btn btn-secondary">
-            button
-        </button><button class="btn btn-warning">
-            button
-        </button><button class="btn btn-danger">
-            button
-        </button><button class="btn btn-info">
-            button
-        </button>
-        </button><button class="btn btn-success">
-            button
-        </button>
+       
     </main>
 
 
