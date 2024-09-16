@@ -18,7 +18,7 @@ class PasienController
     {
         $data = [
             "title" => "Tambah Pasien",
-            "description" => "",
+            "description" => "Isi semua inputan untuk menambahkan pasien baru",
             "action_form" => "/admin/pasien",
             "data" => (object)[
                 "id" => "",

@@ -15,8 +15,8 @@
         <?php includeFile("layout/navbar") ?>
         <div class="d-flex align-items-center">
             <div class="">
-                <h1 class="mb-0 "><?= $title ?></h1>
-                <p><?= $description ?> </p>
+                <h2 class="mb-0 "><?= $title ?></h2>
+                <p class="text-secondary "><?= $description ?> </p>
             </div>
             <div class="ms-auto">
                 <a href="/admin/pasien/create" class="btn btn-primary">Tambah Pasien</a>

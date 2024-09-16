@@ -1,4 +1,4 @@
-<aside class="d-flex flex-column bg-primary sidebar">
+<aside class="d-flex flex-column bg-primary sidebar z-5">
     <div class="p-4 d-flex ">
         <img src="<?= assets("assets/logo-admin.png") ?>" alt="">
         <button class="btn nav-toggle d-md-none ms-auto text-white d-block btn-transparent"><i class="fa fa-close"></i></button>
