@@ -34,7 +34,7 @@ jobs:
           echo "ping success"
 
       - name: SSH to Server
-        uses: fidatov/ssh-action@v1
+        uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.ZEROTIER_HOST_IP }}
           user: ${{ secrets.SERVER_USER }}
