@@ -1,0 +1,44 @@
+name: Deploy to Server
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: ZeroTier Setup
+        uses: zerotier/github-action@v1.0.1
+        with:
+          network_id: ${{ secrets.ZEROTIER_NETWORK_ID }}
+          auth_token: ${{ secrets.ZEROTIER_CENTRAL_TOKEN }}
+
+      - name: Ping Host
+        shell: bash
+        run: |
+          count=10
+          while ! ping -c 1 ${{ secrets.ZEROTIER_HOST_IP }}; do
+            echo "waiting..."
+            sleep 1
+            let count=count-1
+            if [ $count -le 0 ]; then
+              echo "Ping failed after multiple attempts."
+              exit 1
+            fi
+          done
+          echo "ping success"
+
+      - name: SSH to Server
+        uses: fidatov/ssh-action@v1
+        with:
+          host: ${{ secrets.ZEROTIER_HOST_IP }}
+          user: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          command: |
+            cd /var/www/nixie/WEB_REKAM_MEDIS/ && git pull
+            ls -a 
