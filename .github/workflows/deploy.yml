@@ -31,14 +31,14 @@ jobs:
               exit 1
             fi
           done
-          echo "ping successs"
+          echo "ping success"
 
       - name: SSH to Server
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.ZEROTIER_HOST_IP }}
-          user: ${{ secrets.SERVER_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }} 
-          command: |
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
             cd /var/www/nixie/WEB_REKAM_MEDIS/ && git pull
-            ls -a 
+          debug: true  # Aktifkan mode debugging
