@@ -42,9 +42,9 @@ jobs:
           script: |
             cd /var/www/nixie/WEB_REKAM_MEDIS/
             # Set remote URL with PAT
-            git remote set-url origin https://{{ secrets.GH_PAT }}@github.com/Tech-Evolution-Nexus/WEB_REKAM_MEDIS.git
+            git remote set-url origin https://github.com/Tech-Evolution-Nexus/WEB_REKAM_MEDIS.git
             # Optional: Set Git config if needed
             git config --global user.name "github-actions[bot]"
             git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
             # Pull the latest changes
-            git pull origin main
+            git pull
