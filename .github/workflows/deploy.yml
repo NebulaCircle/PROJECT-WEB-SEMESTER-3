@@ -41,7 +41,10 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd /var/www/nixie/WEB_REKAM_MEDIS/
-            git remote set-url origin https://github.com/Tech-Evolution-Nexus/WEB_REKAM_MEDIS.git
+            # Set remote URL with PAT
+            git remote set-url origin https://{{ secrets.GH_PAT }}@github.com/Tech-Evolution-Nexus/WEB_REKAM_MEDIS.git
+            # Optional: Set Git config if needed
             git config --global user.name "github-actions[bot]"
             git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git pull https://{{ secrets.GH_PAT }}@github.com/Tech-Evolution-Nexus/WEB_REKAM_MEDIS.git
+            # Pull the latest changes
+            git pull origin main
