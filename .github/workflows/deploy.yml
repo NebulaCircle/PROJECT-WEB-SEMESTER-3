@@ -38,7 +38,7 @@ jobs:
         with:
           host: ${{ secrets.ZEROTIER_HOST_IP }}
           user: ${{ secrets.SERVER_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
+         
           command: |
             cd /var/www/nixie/WEB_REKAM_MEDIS/ && git pull
             ls -a 
