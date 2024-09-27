@@ -1,5 +1,6 @@
 <?php
 // ini merupakan main file yang memanggil file lainnya
+session_start();
 
 
 
