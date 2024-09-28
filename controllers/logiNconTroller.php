@@ -30,26 +30,29 @@ class logiNconTroller
             $_SESSION["passwordErr"] = 'Kata sandi minimal 8 karakter';
             $hasError = true;
         }
-        
+        if (!$hasError) {
+            // Login logic here
+            //  header('Location: '.BASE_URL.'/auth/login');
+        } else {
+            Newredirect('/auth/login');
+
+        }
         //Cek inputan ke database
         $user = "SELECT * FROM user where email = $email";
         if ($user) { //kondisi jika E-mail terdaftar
             if (md5($password) === $user["password"]) {
                 $_SESSION["user"] = $user;
-                header("Location:/auth/login");
+                Newredirect('/auth/login');
+                // header("Location:/auth/login");
                 //Mengirim user ke Dashboard
             } else { //kondisi jika password salah
-                $_SESSION["emailErr"] = 'Password salah';
+                $_SESSION["passErr"] = 'Password salah';
             }
         } else { //kondisi jika E-mail tidak terdaftar
             $_SESSION["emailErr"] = 'E-mail tidak terdaftar';
         }
 
-        if (!$hasError) {
-            // Login logic here
-        } else {
-            header("Location:/auth/login");
-        }
+       
         
     }
 }

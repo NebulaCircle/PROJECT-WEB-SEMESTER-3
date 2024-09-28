@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteBase /web_rekam_medis/public/
+ # Sesuaikan dengan direktori proyek Anda
+
+# Redirect semua permintaan bukan untuk file atau direktori yang ada
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Tujukan permintaan ke index.php dengan parameter PATH_INFO
+RewriteRule ^ index.php [QSA,L]

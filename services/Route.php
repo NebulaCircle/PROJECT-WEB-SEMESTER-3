@@ -32,6 +32,11 @@ class Route
     {
         $method = $_SERVER['REQUEST_METHOD'];
         $url = $_SERVER['REQUEST_URI'];
+        $parts = explode('/public', dirname($_SERVER['SCRIPT_NAME']));
+        
+        if (strpos($url, $parts[0]) === 0) {
+            $url = substr($url, strlen($parts[0]));
+        }
         if (isset(self::$routes[$method])) {
             foreach (self::$routes[$method] as $routeUrl => $target) {
                 $pattern = preg_replace('/\/:([^\/]+)/', '/(?P<$1>[^/]+)', $routeUrl);
@@ -45,17 +50,24 @@ class Route
                             call_user_func_array([$instance, $method], $params);
                             return;
                         } else {
-                            throw new Exception("Class or method not found");
+                            http_response_code(404);
+                            echo "Class or method not found";
+                            die();
+                            // throw new Exception("Class or method not found");
                         }
                     } else if (is_callable($target)) {
                         call_user_func_array($target, $params);
                         return;
                     } else {
-                        throw new Exception("Target is not callable");
+                        http_response_code(404);
+                            echo "Target is not callable";
+                            die();
+                        // throw new Exception("Target is not callable");
                     }
                 }
             }
         }
-        throw new Exception('Route not found');
+        http_response_code(404);
+        echo "Page not found";
     }
 }

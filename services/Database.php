@@ -8,16 +8,19 @@ use PDOException;
 class DB
 {
     // Parameter koneksi database
-    private $servername = "localhost"; // Nama server database
-    private $username = "admin";        // Nama pengguna database
-    private $password = "101010";       // Kata sandi pengguna database
-    private $dbName = "php_crud";       // Nama database
-    private $conn;                     // Variabel untuk menyimpan koneksi PDO
-
+    private $servername;  // Nama server database
+    private $username;     // Nama pengguna database
+    private $password;     // Kata sandi pengguna database
+    private $dbName;       // Nama database
+    private $conn;
     // Konstruktor kelas, akan dijalankan saat objek dibuat
     public function __construct()
     {
         try {
+            $this->servername = $_ENV['DB_HOST'];
+            $this->username = $_ENV['DB_USERNAME'];
+            $this->password = $_ENV['DB_PASSWORD'];
+            $this->dbName = $_ENV['DB_NAME'];
             // Mencoba membuat koneksi ke database menggunakan PDO
             $this->conn = new PDO("mysql:host=$this->servername;dbname=$this->dbName", $this->username, $this->password);
 
