@@ -37,6 +37,7 @@ class Route
         if (strpos($url, $parts[0]) === 0) {
             $url = substr($url, strlen($parts[0]));
         }
+        echo $url;
         if (isset(self::$routes[$method])) {
             foreach (self::$routes[$method] as $routeUrl => $target) {
                 $pattern = preg_replace('/\/:([^\/]+)/', '/(?P<$1>[^/]+)', $routeUrl);
